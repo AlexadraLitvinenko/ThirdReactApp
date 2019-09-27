@@ -13,23 +13,18 @@ class UsersList extends Component {
         this.update = this.update.bind(this);
         this.change= this.change.bind(this);
     }
-
+//Вызывается при нажатии кнопки
     change(event) {
         event.preventDefault();
-        console.log(this.state.value);
-        //console.log('PROMISE in User: ', getUser());
         getUser({value: this.state.value}).then(({ data:user }) => this.setState({list: user }));
-        console.log(this.state.list);
-       
     }
-
+//Вызывается для изменения state.value
     update(event) {
         this.setState({value: event.target.value});
     }
 
     render() {
-        console.log('test: ', this.state);
-
+//Рендерим массив в виде списка
         const items = this.state.list.map((item, key) =>
         <li key={key}><p>{item.firstName} {item.lastName}</p></li>);
 
