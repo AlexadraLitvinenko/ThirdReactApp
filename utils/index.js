@@ -1,6 +1,6 @@
 const getUsers = (users, firstName) => {
     let usr = [];
-    users.map( (item) => { if (item.firstName = firstName) { usr = [...usr, item ] }});
+    users.map( (item) => { if (item.firstName.includes(firstName)) { usr.push(firstName) }});
     return usr;
 };
 
