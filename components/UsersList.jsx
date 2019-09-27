@@ -31,7 +31,7 @@ class UsersList extends Component {
         console.log('test: ', this.state);
 
         const items = this.state.list.map((item, key) =>
-        <li key={key}>{item.firstName}</li>);
+        <li key={key}><p>{item.firstName} {item.lastName}</p></li>);
 
         return (
             <div>

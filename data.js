@@ -12,13 +12,13 @@ const data = [
 ];
 
 const users = [
-    {firstName: 'Smit'},
-    {firstName: 'Stark'},
-    {firstName: 'Scot'},
-    {firstName: 'Smit'},
-    {firstName: 'Air'},
-    {firstName: 'Poo'},
-    {firstName: 'Poo'},
+    {firstName: 'Smit', lastName: 'Kate'},
+    {firstName: 'Stark', lastName: 'Tony'},
+    {firstName: 'Scot', lastName: 'John'},
+    {firstName: 'Smit', lastName: 'Mary'},
+    {firstName: 'Air', lastName: 'Pure'},
+    {firstName: 'Poo', lastName: 'You'},
+    {firstName: 'Poo', lastName: 'YourMom'},
 ];
 
 // TODO массив users здесь экспортим его
